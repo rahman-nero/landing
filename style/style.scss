@@ -1,0 +1,409 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body {
+    background: #fff;
+}
+
+
+/* Оформления ползунка */
+
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: rgba(0, 0, 0, .0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, #BBBBBB, #686868);
+}
+
+::-moz-scrollbar {
+    width: 9px;
+    background-color: rgba(0, 0, 0, .0);
+}
+
+::-moz-scrollbar-thumb {
+    background: linear-gradient(0deg, #BBBBBB, #686868);
+}
+
+.main_menu {
+    background: rgba(34, 34, 34, .8);
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 9;
+    .center_menu {
+        margin: 0px auto;
+        max-width: 1100px;
+        display: flex;
+        .logo {
+            flex: 1;
+            margin: 0px 10px;
+        }
+        .link_menu {
+            flex: 4;
+            & a {
+                color: #969495;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-right: 10px;
+                padding-bottom: 14px;
+                font-family: Livvic;
+                &:hover {
+                    border-bottom: 1px solid #19CEAB;
+                    color: #19CEAB;
+                    transition-duration: 400ms;
+                }
+            }
+        }
+    }
+}
+
+.one_section {
+    background-image: url(../img/_background.jpeg);
+    position: relative;
+    height: 600px;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    .center_background {
+        max-width: 800px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        position: relative;
+        transform: translate(-50%, -50%);
+        .buttons_ {
+            padding: 9px 15px;
+            background: #19CEAB;
+            display: inline-block;
+            color: white;
+            margin-right: 10px;
+            border-radius: 3px;
+            border-top: 3px solid #fff;
+            font-family: Monda;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: bold;
+        }
+    }
+}
+
+.two_section {
+    width: 100%;
+    font-family: Monda;
+    font-weight: bold;
+    .block {
+        width: 25%;
+        display: inline-block;
+        color: #19CEAB;
+        margin-right: -4px;
+        background-color: #1C2A33;
+        border-top: 5px solid #19CEAD;
+        text-align: center;
+        font-size: 13px;
+        padding: 70px 0px;
+        & img {
+            width: 60px;
+        }
+    }
+    .other {
+        color: #fff;
+        background-color: #19CEAB;
+        border-top: 5px solid #fff;
+    }
+}
+
+.three_block {
+    width: 100%;
+    background: #fff;
+    .blocks_ {
+        width: 29%;
+        display: inline-block;
+        margin: 15px;
+        padding: 10px 0px;
+        color: #6E6E6E;
+        font-family: Livvic;
+        font-size: 12px;
+        .img_title {
+            color: #6E6E6E;
+            font-family: Livvic;
+            font-weight: bold;
+            display: block;
+            font-size: 16px;
+            &:hover {
+                color: #10CEAF;
+                cursor: pointer;
+                transition-duration: .3s;
+            }
+            & img {
+                width: 23px;
+                margin-right: 11px;
+                float: left;
+            }
+        }
+    }
+}
+
+.center_three {
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+.title_three {
+    text-align: center;
+    color: #4E4E4E;
+    font-size: 22px;
+    font-family: MONDA;
+    margin-bottom: 40px;
+}
+
+.four_section {
+    padding: 55px 0px;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/four2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    .png {
+        top: 120px;
+        left: -20px;
+        width: 500px;
+        height: 315px;
+        margin-right: 20px;
+        background-image: url(../img/adaptive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section {
+        margin-left: 70px;
+        
+    }
+}
+.title {
+            font-size: 25px;
+            position: relative;
+            padding: 20px 0px;
+            color: white;
+            font-family: Monda;
+            text-align: center;
+            font-weight: 400;
+        }
+
+.biography {
+    margin: 40px 0px 10px;
+    color: white;
+    position: absolute;
+    width: 400px;
+    font-size: 14px;
+    font-family: Livvic;
+}
+
+
+
+
+
+
+
+
+
+.our_works{
+    
+    padding: 30px 20px 0px 60px;
+    position: relative;
+    max-width: 1100px;
+    margin: 70px auto;
+    background: #fff;
+
+    .block_works{
+        position: relative;
+        margin: 50px 0px 0px;
+        width: auto;
+
+        .work_blocks{
+            display: inline-block;
+            width: 24%;
+            height: 160px;
+            position: relative;
+            margin-right: -8px;
+            margin-top: -16px;
+            overflow: hidden;
+
+    &:hover .hidden_block{
+        visibility: visible;
+        top: 0px;
+        background: #fff;
+        border-top:4px solid #70DFCC;
+        transition-duration:800ms;
+
+    }
+            & img{
+                width: 100%;
+                height: 100%;
+                clear: both;
+
+            }
+
+        }
+        .hidden_block{
+            position: absolute;
+            top: 160px;
+            width: 100%;
+            visibility: hidden;
+            text-align: center;
+            line-height: 30px;
+            text-transform: uppercase;
+            color:#2AD4B3;
+            font-weight: bold;
+            font-family: Monda;
+            height: 100%;
+            padding-top: 40px;
+            font-size: 18px;
+
+            .text_below{
+                font-size: 13px;
+                 font-weight: normal;
+                color: #C1C1C1;
+                text-transform:none;
+
+            }
+
+            .icons{
+            position: relative;
+            width: 20px;
+            height: 20px;
+            line-height:17px;
+            border-radius: 50%;
+            padding: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 5px;
+            background: #2AD4B3;
+
+                & img{
+                    width: 10px;
+                  
+                height: 10px;
+                }
+
+            } 
+            .icons_lite{
+                background: #fff;
+                border:1px solid #2AD4B3;
+                width: 19px;
+                height: 19px;
+            }
+        }
+
+.button_load{
+color: white;
+padding: 9px 15px;
+position: absolute;
+left: 50%;
+transform:translate(-70%);
+border-radius: 2px;
+background:#2AD4B3;
+font-weight: bold;
+cursor: pointer;
+font-family: livvic;
+
+    }
+}
+
+}
+
+
+
+/* Блок Our Service */
+
+.our_services{
+    position: relative;
+    max-width: 1100px;
+    margin: 90px auto 30px;
+    padding: 10px 20px;
+
+}
+
+
+
+.cont {
+    max-width: 1000px;
+    margin: 40px auto 40px;
+}
+
+.tabs-header {
+    display: flex;
+    font-family: Monda;
+}
+
+.tab {
+    border: 1px solid #F0F2F1;
+    padding: 10px 25px;
+    color: #6B6F72;
+    background: #F8FCFF;
+    cursor: pointer;
+    
+}
+
+.tab:hover {
+    background-color: #19CEAB;
+    color: white;
+}
+
+.tab.active {color: white;
+    background-color: #19CEAB;
+}
+
+
+
+.tab-panel {
+    display: none;
+    color: #858585;
+    font-size: 14px;
+    font-family: Livvic;
+    padding: 40px 00px 20px;
+}
+
+.tab-panel img{
+    float: left;
+    width: 150px;
+    height: 90px;
+    margin-right: 10px;
+} 
+
+.tab-panel.active {
+    display: block;
+}
+
+
+
+/* Блок с фоном и немного текста*/
+
+.six_block{
+    position: relative;
+    width: 100%;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 0px 0px 100px;
+    .center_three {
+        max-width: 1100px;
+        
+        & span{
+            color: #19CCA6;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Monda;
+
+        }
+    }
+}

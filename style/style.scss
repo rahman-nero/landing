@@ -54,6 +54,7 @@ body {
         }
         .link_menu {
             flex: 4;
+            text-align: right;
             & a {
                 color: #969495;
                 text-decoration: none;
@@ -393,7 +394,8 @@ font-family: livvic;
 .block_seven{
     position: relative;
     margin:20px auto 80px;
-    width:1000px;
+   max-width:1000px;
+   padding: 0px 10px;
 
     
 
@@ -477,9 +479,10 @@ font-family: livvic;
 
 
     .center_block_pricing{
-        width: 1100px;
+        max-width: 1100px;
         padding: 20px 0px;
         margin:40px auto;
+        padding: 0px 10px;
 
       
         .pricing_block{
@@ -617,11 +620,11 @@ font-family: livvic;
                 .social{
                     position: relative;
                     width: 100%;
-                    margin: 15px 0px -4px;
+                    margin: 15px 0px -1px;
                     padding: 0px 0px;
                         & img{
                         width: 25.2%;
-                        padding: 19px  19px 14px;
+                        padding: 11px  11px 4px;
                         margin-right: -4px;
 
                         border-right: 1px solid white;

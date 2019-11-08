@@ -16,4 +16,18 @@ document.querySelectorAll('.tab').forEach(el => {
     el.addEventListener('click', selectPanel)
 })
 
-}()
+}();
+
+/*Menu*/
+
+let click = document.getElementsByClassName('mobile_menu');
+let close_menu = document.getElementsByClassName('close');
+let window_menu = document.querySelector('.window');
+
+click[0].addEventListener('click', () => {
+window_menu.style.display = 'block';
+});
+
+close_menu[0].addEventListener('click', () => {
+window_menu.style.display = 'none';
+});

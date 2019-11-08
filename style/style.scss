@@ -12,6 +12,10 @@ body {
     background: #fff;
 }
 
+@font-face{
+    font-family:Staatliches;
+    src:url('../fonts/Staatliches-Regular.ttf');
+}
 
 /* Оформления ползунка */
 
@@ -55,6 +59,7 @@ body {
         .link_menu {
             flex: 4;
             text-align: right;
+            
             & a {
                 color: #969495;
                 text-decoration: none;
@@ -64,6 +69,8 @@ body {
                 margin-right: 10px;
                 padding-bottom: 24px;
                 font-family: Livvic;
+
+
                 &:hover {
                     border-bottom: 1px solid #19CEAB;
                     color: #19CEAB;
@@ -73,6 +80,49 @@ body {
         }
     }
 }
+
+/* Mobile Menu */
+
+.window{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.98);
+    z-index: 99;
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    .close{
+            position: absolute;
+            color: white;
+            top: 50px;
+            font-size: 22px;
+            right: 50px;
+        }
+    .center_window{
+        width: 50%;
+        margin: 45% auto;
+        text-align: center;
+
+        & a{
+            display: block;
+            font-size: 29px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            line-height: 32px;
+            color:white;
+            font-family:staatliches;
+            &:hover{
+                color: #10ac89;
+                border-bottom: 1px solid #10ac89;
+            }
+        }
+    }
+}
+
+
+
+
 
 .one_section {
     background-image: url(../img/background.jpg);
@@ -132,6 +182,7 @@ body {
 .three_block {
     width: 100%;
     background: #fff;
+     padding: 0px 10px;
     .blocks_ {
         width: 29%;
         display: inline-block;
@@ -158,6 +209,10 @@ body {
             }
         }
     }
+}
+
+.mobile_menu{
+    display: none;
 }
 
 .center_three {
@@ -296,6 +351,7 @@ font-family: livvic;
 .our_services{
     position: relative;
     max-width: 1100px;
+    display: none;
     margin: 90px auto 30px;
     padding: 10px 20px;
 
@@ -395,12 +451,12 @@ font-family: livvic;
     position: relative;
     margin:20px auto 80px;
    max-width:1000px;
-   padding: 0px 10px;
+
 
     
 
     .block_news{
-        width: 235px;
+       width: 235px;
         height: 200px;
         position: relative;
         background-color: #F8FCFF;
@@ -649,6 +705,7 @@ font-family: livvic;
     .sendEmail{
         position: relative;
         padding: 90px 0px 0px;
+
         display: flex;
 
         .map{
@@ -781,3 +838,170 @@ font-family: livvic;
 
         }
     }
+
+
+
+
+
+@media (max-width: 818px){
+
+    .link_menu a{display: none;}
+     .mobile_menu{
+        display: block;
+        color: white;
+    }
+
+    .three_block{
+        .blocks_{width: 42.5%;}
+        .blocks_:last-child{display: none;}
+    }
+
+        .our_works{
+            .block_works{
+                .work_blocks{display: block;}
+        }
+        
+        }
+
+        .block_seven{
+           
+            padding: 0px 20px;
+            .block_news{
+                width:47.5%;
+                & img{
+                    height: 180px;
+                }
+
+            }
+        }
+
+
+
+
+        .our_team{
+            
+
+        .team_block{width: 48%;
+            margin-bottom: 30px;
+            }
+    }
+}
+
+@media (max-width: 380px){
+     .link_menu a{display: none;}
+     .mobile_menu{
+        display: block;
+        color: white;
+    }
+
+
+    .two_section{
+    .block,._block{
+        width: 50%;
+        display: inline-table;
+        font-size: 11px;
+    }
+    .other{
+
+    }
+}
+
+    .six_block{
+        height: 400px;
+    }
+
+
+
+    .three_block{
+        .blocks_{width: 100%;}
+        .blocks_:last-child{display: none;}
+    }
+
+
+    .block_seven{
+           
+            padding: 0px 20px;
+            .block_news{
+                width:99.5%;
+                & img{
+                    height: 180px;
+                }
+
+            }
+        }
+
+
+     .center_block_pricing{  
+      .pricing_block{
+            width: 100%;
+            display: block;
+            margin-bottom: 80px;
+        }
+    }
+
+
+    .our_team{
+            
+padding: 0px 5px 0px 30px; 
+        .team_block{width: 90%;
+
+            margin-bottom: 30px;
+            .social img{
+             width: 25.2%;
+             padding: 11px 25px;
+            }
+        }
+    }
+
+        .sendEmail{
+        display: block;
+
+        .map{}
+        .email_block{
+padding: 30px 10px;
+            #form_send{
+        & input{
+        max-width: 100%;
+        }
+
+        & textarea{
+       max-width: 100%;
+
+       min-width: 100%;
+       
+        }
+
+        }
+        }
+}
+
+
+
+
+.our{
+    height: auto;
+ 
+.our_works{
+    padding: 10px;
+.block_works{
+.work_blocks{
+    width: 100%;
+    display: block;
+    margin-bottom: 60px;
+
+
+}
+}
+}
+}
+.button_load{
+        display: none;
+    }
+
+
+
+#footer{
+    display: none;
+}
+
+}

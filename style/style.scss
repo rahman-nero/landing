@@ -213,6 +213,11 @@ body {
 
 .mobile_menu{
     display: none;
+    cursor: pointer;
+    & img{
+    width:30px;
+    height: 30px;
+    }
 }
 
 .center_three {
